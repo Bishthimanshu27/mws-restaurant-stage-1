@@ -290,7 +290,7 @@ nav h1 a {
     }
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 600px) {
   .filter-options {
     height: 120px;
   }
@@ -309,10 +309,10 @@ nav h1 a {
   
 }
 
-@media screen  and (max-width: 400px){
+@media screen  and (max-width: 400px) {
   #restaurants-list li {
     width: 100%;
     margin: auto;
-  
+     
   }
 }
