@@ -106,11 +106,13 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
-  background-color: #3397DB;
+  height: 70px;
+  background-color: rgb(4, 10, 14);
   align-items: center;
+  text-align: center;
 }
 .filter-options h2 {
+  display: inline;
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -136,6 +138,9 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -164,6 +169,7 @@ nav h1 a {
   line-height: 1.3;
   margin: 20px 0 10px;
   text-transform: uppercase;
+  
 }
 #restaurants-list p {
   margin: 0;
@@ -190,22 +196,16 @@ nav h1 a {
   z-index: 1000;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
   height: 87%;
-  position: fixed;
+  position: relative;
   right: 0;
   top: 80px;
-  width: 50%;
 }
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
-}
+
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -240,7 +240,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -272,4 +272,47 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+
+
+@media screen and (max-width:1000px)  {
+  #map-container {
+    width: 100%;
+    margin: auto;
+    } 
+
+  #restaurants-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 655px) {
+  .filter-options {
+    height: 120px;
+  }
+}
+
+@media screen  and (max-width: 500px){
+  #restaurants-list li {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .filter-options {
+    width: 100%;
+  }
+  
+}
+
+@media screen  and (max-width: 400px){
+  #restaurants-list li {
+    width: 100%;
+    margin: auto;
+  
+  }
 }
